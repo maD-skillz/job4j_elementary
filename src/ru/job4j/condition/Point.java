@@ -4,8 +4,8 @@ public class Point {
     public static double distance(int x1, int y1, int x2, int y2) {
         double a = x2 - x1;
         double b = y2 - y1;
-        double x = Math.sqrt(a);
-        double y = Math.sqrt(b);
+        double x = Math.pow(a, 2);
+        double y = Math.pow(b, 2);
         double rsl = Math.sqrt(x - y);
         return rsl;
     }

@@ -8,5 +8,5 @@ public class PointTest {
 
     @Test
     public void distance() {
-        assertThat(Point.distance(0, 0, 2, 0), is(1.189207115002721)); }
+        assertThat(Point.distance(0, 0, 2, 0), is(2.0)); }
 }
