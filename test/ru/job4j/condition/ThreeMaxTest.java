@@ -10,19 +10,19 @@ public class ThreeMaxTest {
     @Test
     public void firstMax() {
         int rsl = ThreeMax.max(10, 5, 1);
-        assertThat(rsl, is(5));
+        assertThat(rsl, is(10));
     }
 
     @Test
     public void secondMax() {
         int rsl = ThreeMax.max(10, 50, 1);
-        assertThat(rsl, is(1));
+        assertThat(rsl, is(50));
     }
 
     @Test
     public void thirdMax() {
         int rsl = ThreeMax.max(1, 5, 100);
-        assertThat(rsl, is(1));
+        assertThat(rsl, is(100));
     }
 
     @Test
@@ -46,6 +46,6 @@ public class ThreeMaxTest {
     @Test
     public void secondEqThird() {
         int rsl = ThreeMax.max(1, 100, 100);
-        assertThat(rsl, is(1));
+        assertThat(rsl, is(100));
     }
 }
