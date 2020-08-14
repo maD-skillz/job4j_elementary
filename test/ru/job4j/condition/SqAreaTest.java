@@ -9,10 +9,11 @@ public class SqAreaTest {
 
     @Test
     public void ifP6K2() {
-        assertThat(SqArea.square(6,2), is(2.0));
+        assertThat(SqArea.square(6, 2), is(2.0));
     }
+
     @Test
     public void ifP4K1() {
-        assertThat(SqArea.square(4,1), is(1.0));
+        assertThat(SqArea.square(4, 1), is(1.0));
     }
 }
