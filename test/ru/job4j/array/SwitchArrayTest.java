@@ -13,4 +13,12 @@ public class SwitchArrayTest {
         int[] rsl = SwitchArray.swap(input, 0, input.length - 1);
         assertThat(rsl, is(expect));
     }
+
+    @Test
+    public void whenSwap5to2() {
+        int[] input = {1, 2, 3, 4, 5, 6};
+        int[] expect = {1, 2, 6, 4, 5, 3};
+        int[] rsl = SwitchArray.swap(input, 2, 5);
+        assertThat(rsl, is(expect));
+    }
 }
